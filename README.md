@@ -1,3 +1,3 @@
 # GameOfLife
 
-See 'coursework.pdf' for details
+See `coursework.pdf` for details
