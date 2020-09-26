@@ -60,8 +60,8 @@ Create a file gol.c that implements the functions above:
 
   7. print_statistics() should calculate the percentage of cells that are alive in the current generation and the average percentage that have been alive in all of the generations so far (including the original generation). Percentages should be given to three decimal places, and printed to the screen in the following format: [4 marks]
 
-  32.000% of cells currently alive<br>
-  10.667% of cells alive on average
+      32.000% of cells currently alive<br>
+      10.667% of cells alive on average
 
 Your library should support having multiple universe structures in memory at a time. It must not use any global variables. Consider appropriate error checking and make sure that your library can be used robustly. In case of errors, print a message to stderr and exit the current program with a non-zero error code. [10 marks]
 
