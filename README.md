@@ -29,7 +29,7 @@ In the functions below, the rows are numbered 0, 1, 2, . . . from top to bottom 
 You have been provided with the file gol.h, whose contents are as follows:
 
 struct universe {<br>
-/*Put some appropriate things here*/<br>
+/* Put some appropriate things here */<br>
 };<br>
 
 /* Do not modify the next seven lines */<br>
