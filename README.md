@@ -15,11 +15,17 @@ To do this, you will construct a dynamically-linked library libgol.so which impl
 The file format for valid input and output files: each line represents one row of the grid and each character represents one cell on that row: ‘*’ represents a live cell and ‘.’ represents a dead cell. For example:
 
 .........
+
 .........
+
 .........
+
 ..***....
+
 .........
+
 .........
+
 
 In the functions below, the rows are numbered 0, 1, 2, . . . from top to bottom and the columns are numbered 0, 1, 2, . . . from left to right. In any valid file, there will be at most 512 columns; the number of rows is not limited.
 
@@ -29,17 +35,29 @@ In the functions below, the rows are numbered 0, 1, 2, . . . from top to bottom 
 You have been provided with the file gol.h, whose contents are as follows:
 
 struct universe {
+
 /*Put some appropriate things here*/
+
 };
 
 /*Do not modify the next seven lines*/
+
 void read_in_file(FILE *infile, struct universe *u);
+
 void write_out_file(FILE *outfile, struct universe *u);
+
 int is_alive(struct universe *u, int column, int row);
+
 int will_be_alive(struct universe *u, int column, int row);
+
 int will_be_alive_torus(struct universe *u, int column, int row);
-void evolve(struct universe *u, int (*rule)(struct universe *u, int column, int row)); void print_statistics(struct universe *u);
+
+void evolve(struct universe *u, int (*rule)(struct universe *u, int column, int row));
+
+void print_statistics(struct universe *u);
+
 /*You can modify after this line again*/
+
 
 In gol.h, devise an appropriate structure struct universe to hold the universe of cells and any data you need to keep track of; do not add additional functions to gol.h. [4 marks]
 
